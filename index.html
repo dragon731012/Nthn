@@ -44,8 +44,13 @@
           frame.src=get_cookie("location");
    }
 
-   frame.style.height=(window.innerHeight-document.getElementsByClassName("header-section")[0].offsetHeight+5)+"px";
-   frame.style.width=window.innerWidth;
+	frame.style.height="100%";
+	frame.style.width="100%";
+	frame.style.left="0px";
+	frame.style.bottom="0px";
+	 
+   //frame.style.height=(window.innerHeight-document.getElementsByClassName("header-section")[0].offsetHeight+5)+"px";
+   //frame.style.width=window.innerWidth;
 
 
    setInterval(function(){
