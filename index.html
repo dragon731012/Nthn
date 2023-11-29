@@ -60,11 +60,11 @@
      var elems=document.getElementsByClassName("txt");
      for (var i=0;i<elems.length;i++){
      	if (elems[i].innerText.toLowerCase().includes(location) && elems[i].dataset.inuse=="false"){
-		elems[i].borderBottom="2px solid white";
+		elems[i].style.borderBottom="2px solid white";
 		elems[i].dataset.inuse="true";
 	}
 	else{
-		elems[i].borderBottom="0px solid white";
+		elems[i].style.borderBottom="0px solid white";
 		elems[i].dataset.inuse="false";
 	}
      }
