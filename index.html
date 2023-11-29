@@ -9,27 +9,48 @@
 
 	<link rel="stylesheet" href="css/style.css"/>
 
-<header class="header-section">
-		<div class="header-warp">
-		
-			<div class="header-bar-warp d-flex">
-				<!-- site logo -->
-				<a href="index.html" class="site-logo">
-					<img src="./img/logo.png" alt="">
-				</a>
-				<nav class="top-nav-area w-100">
-					<!-- Menu -->
-					<ul class="main-menu primary-menu">
-						<li><a onclick="goto('home.html');">Home</a></li>
-						<li><a onclick="goto('games.html');">Games</a></li>
-						<li><a onclick="goto('hacks.html');">Hacks</a></li>
-						<li><a onclick="goto('extras.html');">Extras</a></li>
-						<li><a onclick="goto('partners.html');">Partners</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+
+	<ul id="nav">
+		<li><a onclick="goto('home.html');">Home</a></li>
+		<li><a onclick="goto('games.html');">Games</a></li>
+		<li><a onclick="goto('hacks.html');">Hacks</a></li>
+		<li><a onclick="goto('extras.html');">Extras</a></li>
+		<li><a onclick="goto('partners.html');">Partners</a></li>
+	</ul>
+
+<style>
+	#nav{
+		list-style-type: none;
+            margin: 0;
+        z-index:2;
+            padding: 0;
+            overflow: hidden;
+            background-color: #560061;
+          position:absolute;
+          width:100%;
+          top:0px;
+          left:0px;
+	}
+
+	li.nav-item {
+            float: left;
+            cursor: pointer !important;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            transition: all 1s;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            box-shadow: 0 6px 2px -2px #c4c4c4;
+        }
+</style>
+
  <iframe id="frame" src="home.html"></iframe>
  <script>
    var frame=document.getElementById("frame");
