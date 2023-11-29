@@ -48,6 +48,7 @@
             text-decoration: none;
 	}
 	li.nav-item:hover{
+		border-bottom:0px;
 		border-bottom:2px solid #c4c4c4;
 	}
 </style>
@@ -60,6 +61,9 @@
      for (var i=0;i<elem.length;i++){
 	     if (elem[i].innerText.toLowerCase().includes(url.replace(".html",""))){
 	     	elem[i].style.borderBottom="2px solid white";
+	     }
+	     else{
+		     elem[i].style.borderBottom="0px solid white";
 	     }
      }
    }
