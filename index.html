@@ -58,7 +58,7 @@
      frame.src=url;
      var elem=document.getElementsByClassName("txt"); 
      for (var i=0;i<elem.length;i++){
-	     if (elem[i].innerText.includes(url.replace(".html",""))){
+	     if (elem[i].innerText.toLowerCase().includes(url.replace(".html",""))){
 	     	elem[i].style.borderBottom="2px solid white";
 	     }
    }
