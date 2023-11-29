@@ -59,7 +59,7 @@
      var location=url.replace(".html","");
      var elems=document.getElementsByClassName("nav-item");
      for (var i=0;i<elems.length;i++){
-     	if (elems[i].innerText.toLowerCase().includes(location) && elems[i].dataset.inuse=="false";){
+     	if (elems[i].innerText.toLowerCase().includes(location) && elems[i].dataset.inuse=="false"){
 		elems[i].borderBottom="2px solid white";
 		elems[i].dataset.inuse="true";
 	}
