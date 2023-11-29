@@ -57,7 +57,7 @@
    function goto(url){
      frame.src=url;
      var location=url.replace(".html","");
-     var elems=document.getElementsByClassName("nav-item");
+     var elems=document.getElementsByClassName("txt");
      for (var i=0;i<elems.length;i++){
      	if (elems[i].innerText.toLowerCase().includes(location) && elems[i].dataset.inuse=="false"){
 		elems[i].borderBottom="2px solid white";
