@@ -12,11 +12,11 @@
 
 
 	<ul id="nav">
-		<li class="nav-item"><a onclick="goto('home.html');clear();document.getElementById('home').style.borderBottom='1px solid white';"><h5 class="txt" id="home">Home</h5></a></li>
-		<li class="nav-item"><a onclick="goto('games.html');clear();document.getElementById('games').style.borderBottom='1px solid white';"><h5 class="txt" id="games">Games</h5></a></li>
-		<li class="nav-item"><a onclick="goto('hacks.html');clear();document.getElementById('hacks').style.borderBottom='1px solid white';"><h5 class="txt" id="hacks">Hacks</h5></a></li>
-		<li class="nav-item"><a onclick="goto('extras.html');clear();document.getElementById('extras').style.borderBottom='1px solid white';"><h5 class="txt" id="extras">Extras</h5></a></li>
-		<li class="nav-item"><a onclick="goto('partners.html');clear();document.getElementById('partners').style.borderBottom='1px solid white';"><h5 class="txt" id="partners">Partners</h5></a></li>
+		<li class="nav-item"><a onclick="goto('home.html');clear();document.getElementById('home').style.borderBottom='2px solid white';"><h5 class="txt" id="home">Home</h5></a></li>
+		<li class="nav-item"><a onclick="goto('games.html');clear();document.getElementById('games').style.borderBottom='2px solid white';"><h5 class="txt" id="games">Games</h5></a></li>
+		<li class="nav-item"><a onclick="goto('hacks.html');clear();document.getElementById('hacks').style.borderBottom='2px solid white';"><h5 class="txt" id="hacks">Hacks</h5></a></li>
+		<li class="nav-item"><a onclick="goto('extras.html');clear();document.getElementById('extras').style.borderBottom='2px solid white';"><h5 class="txt" id="extras">Extras</h5></a></li>
+		<li class="nav-item"><a onclick="goto('partners.html');clear();document.getElementById('partners').style.borderBottom='2px solid white';"><h5 class="txt" id="partners">Partners</h5></a></li>
 	</ul>
 
 <style>
@@ -32,7 +32,9 @@
           top:0px;
           left:0px;
 	}
-
+	body{
+		background-color:black;
+	}
 	li.nav-item {
 	    color:white;
             float: left;
@@ -49,6 +51,22 @@
 	}
 	li.nav-item:enabled:hover{
 		border-bottom:2px solid #c4c4c4;
+	}
+	@keyframes fadeout{
+		0%{
+			border-bottom:2px solid white;
+		}
+		100%{
+			border-bottom:0px solid white;
+		}
+	}
+	@keyframes fadein{
+		0%{
+			border-bottom:0px solid white;
+		}
+		100%{
+			border-bottom:2px solid white;
+		}
 	}
 </style>
  <script>
