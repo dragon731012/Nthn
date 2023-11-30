@@ -60,7 +60,8 @@
      frame.src=url;
      old=crnt;
      crnt=url.replace(".html","");
-     var elems=document.getElementsByClassName("txt");
+     document.getElementById(crnt).style.borderBottom="1px solid white";
+	document.getElementById(old).style.borderBottom="0px solid white";
    }
 
    function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
@@ -82,11 +83,6 @@
    setInterval(function(){
           document.cookie="location="+frame.contentWindow.location.href.replace(window.location.origin,"")+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
   },100);
-
-	 setInterval(() => {
-		 document.getElementById(crnt).style.borderBottom="1px solid white";
-		 document.getElementById(old).style.borderBottom="0px solid white";
-	 },1);
 
  </script>
 <script src="js/jquery-3.2.1.min.js"></script>
