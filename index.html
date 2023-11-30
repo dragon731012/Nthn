@@ -55,6 +55,8 @@
    var frame=document.getElementById("frame");
    var crnt="home";
    var old="extras";
+	 document.getElementById(crnt).style.borderBottom="1px solid white";
+	document.getElementById(old).style.borderBottom="0px solid white";
 	 
    function goto(url){
      frame.src=url;
