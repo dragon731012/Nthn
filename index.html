@@ -53,13 +53,13 @@
 </style>
  <script>
    var frame=document.getElementById("frame");
-   var location="home";
+   var crnt="home";
    var old="extras";
 	 
    function goto(url){
      frame.src=url;
-     old=location;
-     location=url.replace(".html","");
+     old=crnt;
+     crnt=url.replace(".html","");
      var elems=document.getElementsByClassName("txt");
    }
 
@@ -84,7 +84,7 @@
   },100);
 
 	 setInterval(() => {
-		 document.getElementById(location).style.borderBottom="2px solid white";
+		 document.getElementById(crnt).style.borderBottom="2px solid white";
 		 document.getElementById(old).style.borderBottom="2px solid white";
 	 },1);
 
