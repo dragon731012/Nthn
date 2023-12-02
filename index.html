@@ -49,7 +49,7 @@
             padding: 14px 16px;
             text-decoration: none;
 	}
-	li.nav-item:enabled:hover{
+	.txt:hover{
 		border-bottom:2px solid #c4c4c4;
 	}
 	@keyframes fadeout{
@@ -71,6 +71,8 @@
 </style>
  <script>
    var frame=document.getElementById("frame");
+
+   document.getElementById("home").style.borderBottom="2px solid white";
 	 
    function goto(url){
      frame.src=url;
